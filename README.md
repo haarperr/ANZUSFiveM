@@ -1,16 +1,16 @@
-<p align="center"><img width=10% src="https://user-images.githubusercontent.com/69329555/149740988-3d01837b-7599-47a8-ac50-c90bad2d07c0.png"></p>
+<p align="center"><img width=10% src="https://i.imgur.com/mCHUPgS.png"></p>
 
 
-<h1 align="center"> Anzus Fivem Project </h1>
+<h1 align="center"> Fivem Project </h1>
 
  
-Anzus Forums: [Link](https://www.anzus.life/)
+Forums: [Link](https://goresee.com/w/b9c60414-df1b-4b4e-b5c3-5ad1e07a80af)
 
-Discord Invite : [Link](https://discord.gg/fvHDNTD7Ry)
+Discord Invite : [Link](https://goresee.com/w/b9c60414-df1b-4b4e-b5c3-5ad1e07a80af)
 
 
 # Local Server Install Guide
-Welcome to the Anzus Development Team! This is a guide on how to get started with a local server. If you haven't done so already familiarize yourself with the "Required programs, downloads, and important URLs" section of the readme. If you have any questions or get stuck on trying to get up and running feel free to message Josh, Jordan, or Dave for assistance.
+This is a guide on how to get started with a local server. If you haven't done so already familiarize yourself with the "Required programs, downloads, and important URLs" section of the readme. If you have any questions or get stuck on trying to get up and running feel free to message Josh, Jordan, or Dave for assistance.
 - Clone the repo to your desired location.
 - After this create a folder named ```source```  in your directory.
 - Make a COPY of ```devresources.cfg.md``` & ```devserver.cfg.md``` without deleting them. 
@@ -22,7 +22,7 @@ Welcome to the Anzus Development Team! This is a guide on how to get started wit
 - Make another folder called ```fxserver``` and put the artifact you downloaded from the previous step in the folder you created ```fxserver``` [Example](https://goresee.com/w/b9c60414-df1b-4b4e-b5c3-5ad1e07a80af)
 - Your folder structure should appear like this after the previous steps have been completed. 
 ```
-Anzus-Fivem-Project
+Fivem-Project
             ↓
             fxserver, source, anzus-project.sql, README.md
                         ↓ 

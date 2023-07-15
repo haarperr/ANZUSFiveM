@@ -1,0 +1,7 @@
+{
+    "verbose": true,
+    "watch": ["dist/*.js"],
+    "ext": "ts,mjs,js,json,graphql",
+    "exec": "node ./dist/server.js -v"
+  }
+  

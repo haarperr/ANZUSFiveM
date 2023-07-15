@@ -1,0 +1,300 @@
+-------------------
+-- qb-inventory: --  Add the following to /qb-core > /shared > items.lua ---- ----- add images from /assets to /qb_inventory > /html > /images
+-------------------
+
+
+-- burger
+['buns'] 						 = {['name'] = 'buns',							['label'] = 'Buns',          			['weight'] = 0,			['type'] = 'item', 		['image'] = 'buns.png', 				['unique'] = false, 	['useable'] = false, 	['shouldClose'] = false, 	['combinable'] = nil, 	   ['description'] = 'Buns'},
+['cheese']   					 = {['name'] = 'cheese',						['label'] = 'Cheese',        			['weight'] = 0,			['type'] = 'item', 		['image'] = 'cheese.png', 				['unique'] = false, 	['useable'] = false, 	['shouldClose'] = false, 	['combinable'] = nil, 	   ['description'] = 'Cheese'},
+['lettuce'] 					 = {['name'] = 'lettuce',						['label'] = 'Lettuce',       			['weight'] = 0,			['type'] = 'item', 		['image'] = 'lettuce.png', 				['unique'] = false, 	['useable'] = false, 	['shouldClose'] = false, 	['combinable'] = nil, 	   ['description'] = 'Lettuce'},
+['onions'] 						 = {['name'] = 'onions',						['label'] = 'Onions',        			['weight'] = 0,			['type'] = 'item', 		['image'] = 'onions.png', 				['unique'] = false, 	['useable'] = false, 	['shouldClose'] = false, 	['combinable'] = nil, 	   ['description'] = 'Onions'},
+['raw_patty']  					 = {['name'] = 'raw_patty',						['label'] = 'Raw Patty',     			['weight'] = 0,			['type'] = 'item', 		['image'] = 'raw_patty.png', 			['unique'] = false, 	['useable'] = false, 	['shouldClose'] = false, 	['combinable'] = nil, 	   ['description'] = 'Raw Patty'},
+['cooked_patty'] 				 = {['name'] = 'cooked_patty',					['label'] = 'Cooked Patty',  			['weight'] = 0,			['type'] = 'item', 		['image'] = 'cooked_patty.png', 		['unique'] = false, 	['useable'] = false, 	['shouldClose'] = false, 	['combinable'] = nil, 	   ['description'] = 'Cooked Patty'},
+['tomato'] 						 = {['name'] = 'tomato',						['label'] = 'Tomato',		 			['weight'] = 0,			['type'] = 'item', 		['image'] = 'tomato.png', 				['unique'] = false, 	['useable'] = false, 	['shouldClose'] = false, 	['combinable'] = nil, 	   ['description'] = 'Tomato'},
+
+['burger']                       = {['name'] = 'burger',						['label'] = 'Burger',		 			['weight'] = 0,			['type'] = 'item', 		['image'] = 'burger.png', 				['unique'] = false, 	['useable'] = true, 	['shouldClose'] = false, 	['combinable'] = nil, 	   ['description'] = 'Burger'},
+['double_burger']                = {['name'] = 'double_burger',					['label'] = 'Double Cheese Burger',		['weight'] = 0,			['type'] = 'item', 		['image'] = 'double_burger.png', 		['unique'] = false, 	['useable'] = true, 	['shouldClose'] = false, 	['combinable'] = nil, 	   ['description'] = 'Double Cheese Burger'},
+['triple_burger']                = {['name'] = 'triple_burger',					['label'] = 'Triple Cheese Burger',		['weight'] = 0,			['type'] = 'item', 		['image'] = 'triple_burger.png', 		['unique'] = false, 	['useable'] = true, 	['shouldClose'] = false, 	['combinable'] = nil, 	   ['description'] = 'Triple Cheese Burger'},
+
+-- fries								
+['potato'] 						 = {['name'] = 'potato',						['label'] = 'Potato',					['weight'] = 0,			['type'] = 'item', 		['image'] = 'potato.png', 				['unique'] = false, 	['useable'] = false, 	['shouldClose'] = false, 	['combinable'] = nil, 	   ['description'] = 'Potato'},
+['fries'] 						 = {['name'] = 'fries',							['label'] = 'Fries',					['weight'] = 0,			['type'] = 'item', 		['image'] = 'fries.png', 				['unique'] = false, 	['useable'] = true, 	['shouldClose'] = false, 	['combinable'] = nil, 	   ['description'] = 'Fries'},
+
+['tortilla']                     = {['name'] = 'tortilla',                      ['label'] = 'Tortilla',                 ['weight'] = 0,         ['type'] = 'item',     ['image'] = 'tortilla.png',              ['unique'] = false,     ['useable'] = false,    ['shouldClose'] = false,    ['combinable'] = nil,      ['description'] = 'Tortilla'},
+['cooked_fish']                  = {['name'] = 'cooked_fish',                   ['label'] = 'Cooked Fish',              ['weight'] = 0,         ['type'] = 'item',     ['image'] = 'cooked_fish.png',           ['unique'] = false,     ['useable'] = false,    ['shouldClose'] = false,    ['combinable'] = nil,      ['description'] = 'Cooked Fish'},
+['raw_fish']                     = {['name'] = 'raw_fish',                      ['label'] = 'Raw Fish',                 ['weight'] = 0,         ['type'] = 'item',     ['image'] = 'raw_fish.png',              ['unique'] = false,     ['useable'] = false,    ['shouldClose'] = false,    ['combinable'] = nil,      ['description'] = 'Raw Fish'},
+['raw_chicken']                  = {['name'] = 'raw_chicken',                   ['label'] = 'Raw Chicken',              ['weight'] = 0,         ['type'] = 'item',     ['image'] = 'raw_chicken.png',           ['unique'] = false,     ['useable'] = false,    ['shouldClose'] = false,    ['combinable'] = nil,      ['description'] = 'Raw Chicken'},
+['cooked_chicken']               = {['name'] = 'cooked_chicken',                ['label'] = 'Cooked Chicken',           ['weight'] = 0,         ['type'] = 'item',     ['image'] = 'cooked_chicken.png',        ['unique'] = false,     ['useable'] = true,     ['shouldClose'] = false,    ['combinable'] = nil,      ['description'] = 'Cooked Chicken'},
+['orange_chicken']               = {['name'] = 'orange_chicken',                ['label'] = 'Orange Chicken',           ['weight'] = 0,         ['type'] = 'item',     ['image'] = 'orange_chicken.png',        ['unique'] = false,     ['useable'] = false,    ['shouldClose'] = false,    ['combinable'] = nil,      ['description'] = 'Orange Chicken'},
+['orange']                       = {['name'] = 'orange',                        ['label'] = 'Orange',                   ['weight'] = 0,         ['type'] = 'item',     ['image'] = 'orange.png',                ['unique'] = false,     ['useable'] = false,    ['shouldClose'] = false,    ['combinable'] = nil,      ['description'] = 'Orange'},
+['sushi']                        = {['name'] = 'sushi',                         ['label'] = 'Sushi',                    ['weight'] = 0,         ['type'] = 'item',     ['image'] = 'sushi.png',                 ['unique'] = false,     ['useable'] = false,    ['shouldClose'] = false,    ['combinable'] = nil,      ['description'] = 'Sushi'},
+['fish_taco']                    = {['name'] = 'fish_taco',                     ['label'] = 'Fish Taco',                ['weight'] = 0,         ['type'] = 'item',     ['image'] = 'fish_taco.png',             ['unique'] = false,     ['useable'] = true,     ['shouldClose'] = false,    ['combinable'] = nil,      ['description'] = 'Fish Taco'},
+
+-- rice dishes  
+['rice']                         = {['name'] = 'rice',                          ['label'] = 'Rice',                     ['weight'] = 0,         ['type'] = 'item',     ['image'] = 'rice.png',                  ['unique'] = false,     ['useable'] = false,    ['shouldClose'] = false,    ['combinable'] = nil,      ['description'] = 'Rice'},
+['fried_rice']                   = {['name'] = 'fried_rice',                    ['label'] = 'Fried Rice',               ['weight'] = 0,         ['type'] = 'item',     ['image'] = 'fried_rice.png',            ['unique'] = false,     ['useable'] = true,     ['shouldClose'] = false,    ['combinable'] = nil,      ['description'] = 'Fried Rice'},
+
+['receipt']                      = {['name'] = 'receipt',                       ['label'] = 'Receipt',                  ['weight'] = 0,         ['type'] = 'item',     ['image'] = 'receipt.png',               ['unique'] = false,     ['useable'] = false,    ['shouldClose'] = false,    ['combinable'] = nil,      ['description'] = 'Receipt'},
+
+
+
+-------------------
+-- ox-inventory: -- add the following to /ox_inventory > /data > items.lua ----- add images from /assets to /ox_inventory > /web > /images
+-------------------
+
+-- solos-restaurants
+
+	--burger
+	["buns"] = {label = "Buns", weight = 1, stack = true, close = true, client = {image = 'buns.png',},},
+	["cheese"] = {label = "Cheese", weight = 1, stack = true, close = true, client = {image = 'cheese.png',},},
+	["lettuce"] = {label = "Lettuce", weight = 1, stack = true, close = true, client = {image = 'lettuce.png',},},
+	["onions"] = {label = "Onions", weight = 1, stack = true, close = true, client = {image = 'onions.png',},},
+
+	--fries
+	["potato"] = {label = "Potato", weight = 1, stack = true, close = true, client = {image = 'potato.png',},},
+	
+
+	["receipt"] = {label = "Receipt", weight = 1, stack = true, close = true, client = {image = 'receipt.png',},},
+
+    ["burger"] = {
+		label = "Burger",
+		weight = 0,
+		stack = true,
+		close = false,
+		description = "Cheese Burger",
+		client = {
+			image = "burger.png",
+			status = { hunger = 25 },
+			anim = 'eating',
+			prop = 'burger',
+			usetime = 2500,
+		},
+		consume = 1.0,
+	},
+
+	["double_burger"] = {
+		label = "Double Burger",
+		weight = 0,
+		stack = true,
+		close = false,
+		description = "Double Cheese Burger",
+		client = {
+			image = "double_burger.png",
+			status = { hunger = 25 },
+			anim = 'eating',
+			prop = 'burger',
+			usetime = 2500,
+		},
+		consume = 1.0,
+	},
+
+	["raw_patty"] = {
+		label = "Raw Patty",
+		weight = 0,
+		stack = true,
+		close = false,
+		description = "Raw Patty",
+		client = {
+			image = "raw_patty.png",
+		}
+	},
+
+	["raw_chicken"] = {
+		label = "Raw Chicken",
+		weight = 0,
+		stack = true,
+		close = false,
+		description = "Raw Chicken",
+		client = {
+			image = "raw_chicken.png",
+		}
+	},
+
+	["sushi"] = {
+		label = "Sushi",
+		weight = 0,
+		stack = true,
+		close = false,
+		description = "Sushi",
+		client = {
+			image = "sushi.png",
+			status = { hunger = 25 },
+			anim = 'eating',
+			prop = nil,
+			usetime = 2500,
+			notification = 'You ate a delicious burger'
+		},
+		consume = 1.0,
+	},
+
+	["tortilla"] = {
+		label = "Tortilla",
+		weight = 0,
+		stack = true,
+		close = false,
+		description = "Tortilla",
+		client = {
+			image = "tortilla.png",
+		}
+	},
+
+	["triple_burger"] = {
+		label = "Triple Cheese Burger",
+		weight = 0,
+		stack = true,
+		close = false,
+		description = "Triple Cheese Burger",
+		client = {
+			image = "triple_burger.png",
+			status = { hunger = 25 },
+			anim = 'eating',
+			prop = 'burger',
+			usetime = 2500,
+			notification = 'You ate a delicious burger'
+		},
+		consume = 1.0,
+	},
+
+	["cooked_fish"] = {
+		label = "Cooked Fish",
+		weight = 0,
+		stack = true,
+		close = false,
+		description = "Cooked Fish",
+		client = {
+			image = "cooked_fish.png",
+		}
+	},
+
+	["orange"] = {
+		label = "Orange",
+		weight = 0,
+		stack = true,
+		close = false,
+		description = "Orange",
+		client = {
+			image = "orange.png",
+		}
+	},
+
+	["orange_chicken"] = {
+		label = "Orange Chicken",
+		weight = 0,
+		stack = true,
+		close = false,
+		description = "Orange Chicken",
+		client = {
+			image = "orange_chicken.png",
+			status = { hunger = 25 },
+			anim = 'eating',
+			prop = nil,
+			usetime = 2500,
+		},
+		consume = 1.0,
+	},
+
+	["fried_rice"] = {
+		label = "Fried Rice",
+		weight = 0,
+		stack = true,
+		close = false,
+		description = "Fried Rice",
+		client = {
+			image = "fried_rice.png",
+			status = { hunger = 25 },
+			anim = 'eating',
+			prop = nil,
+			usetime = 2500,
+		},
+		consume = 1.0,
+	},
+
+	["fries"] = {
+		label = "Fries",
+		weight = 0,
+		stack = true,
+		close = false,
+		description = "Fries",
+		client = {
+			image = "fries.png",
+			status = { hunger = 25 },
+			anim = 'eating',
+			prop = nil,
+			usetime = 2500,
+		},
+		consume = 1.0,
+	},
+
+	["rice"] = {
+		label = "Rice",
+		weight = 0,
+		stack = true,
+		close = false,
+		description = "Rice",
+		client = {
+			image = "rice.png",
+		}
+	},
+
+	["tomato"] = {
+		label = "Tomato",
+		weight = 0,
+		stack = true,
+		close = false,
+		description = "Tomato",
+		client = {
+			image = "tomato.png",
+		}
+	},
+
+	["cooked_chicken"] = {
+		label = "Cooked Chicken",
+		weight = 0,
+		stack = true,
+		close = false,
+		description = "Cooked Chicken",
+		client = {
+			image = "cooked_chicken.png",
+		},
+	},
+
+	["cooked_patty"] = {
+		label = "Cooked Patty",
+		weight = 0,
+		stack = true,
+		close = false,
+		description = "Cooked Patty",
+		client = {
+			image = "cooked_patty.png",
+		}
+	},
+
+	["raw_fish"] = {
+		label = "Raw Fish",
+		weight = 0,
+		stack = true,
+		close = false,
+		description = "Raw Fish",
+		client = {
+			image = "raw_fish.png",
+		}
+	},
+
+	["fish_taco"] = {
+		label = "Fish Taco",
+		weight = 0,
+		stack = true,
+		close = false,
+		description = "Fish Taco",
+		client = {
+			image = "fish_taco.png",
+			status = { hunger = 25 },
+			anim = 'eating',
+			prop = nil,
+			usetime = 2500,
+		},
+		consume = 1.0,
+	},
+
+
+

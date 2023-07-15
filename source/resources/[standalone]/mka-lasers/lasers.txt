@@ -1,0 +1,42 @@
+-- Name: pacific1 | 2023-04-21T07:32:06Z
+Laser.new(
+  {vector3(263.903, 220.93, 97.061), vector3(262.765, 217.765, 96.967)},
+  {},
+  {travelTimeBetweenTargets = {1.0, 1.0}, waitTimeAtTargets = {0.0, 0.0}, name = "pacific1"}
+)
+
+-- Name: pacfici2 | 2023-04-21T07:37:34Z
+Laser.new(
+  vector3(262.762, 217.767, 97.018),
+  {vector3(263.905, 220.929, 96.982)},
+  {travelTimeBetweenTargets = {1.0, 1.0}, waitTimeAtTargets = {0.0, 0.0}, randomTargetSelection = true, name = "pacfici2"}
+)
+
+-- Name: pac | 2023-04-21T08:08:24Z
+Laser.new(
+  vector3(262.759, 217.768, 97.241),
+  {vector3(263.906, 220.928, 97.293)},
+  {travelTimeBetweenTargets = {1.0, 1.0}, waitTimeAtTargets = {0.0, 0.0}, randomTargetSelection = true, name = "pac"}
+)
+
+-- Name: pc | 2023-04-21T08:11:21Z
+Laser.new(
+  vector3(263.886, 220.936, 98.31),
+  {vector3(262.772, 217.763, 96.181), vector3(263.864, 220.795, 96.171), vector3(263.373, 219.501, 96.171), vector3(262.764, 217.766, 97.739)},
+  {travelTimeBetweenTargets = {1.0, 1.0}, waitTimeAtTargets = {0.0, 0.0}, randomTargetSelection = true, name = "pc"}
+)
+
+-- Name: d | 2023-04-21T08:15:46Z
+Laser.new(
+  vector3(262.816, 217.747, 97.716),
+  {vector3(263.908, 220.927, 97.748)},
+  {travelTimeBetweenTargets = {1.0, 1.0}, waitTimeAtTargets = {0.0, 0.0}, randomTargetSelection = true, name = "d"}
+)
+
+-- Name: cd | 2023-04-21T08:56:09Z
+Laser.new(
+  vector3(254.6, 224.315, 97.136),
+  {vector3(253.453, 221.155, 97.107)},
+  {travelTimeBetweenTargets = {1.0, 1.0}, waitTimeAtTargets = {0.0, 0.0}, randomTargetSelection = true, name = "cd"}
+)
+

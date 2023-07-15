@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Browser Link Opener</title>
+</head>
+<body>
+    <!-- This file is used to open links in the browser from the FiveM client -->
+    <script type="text/javascript">
+        $(document).ready(() => {
+            window.addEventListener('message', (event) => {
+                let data = event.data
+                if(data.action == 'openUrl') {
+                    window.invokeNative('openUrl', data.url)
+                }
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_npwd_nui=self.webpackChunk_npwd_nui||[]).push([[2014],{82014:function(n,u,t){t.r(u);var e=t(61250),s=(t(53182),t(91537));u.default=function(){return(0,e.jsx)(s.Contacts,{fontSize:"small"})}}}]);

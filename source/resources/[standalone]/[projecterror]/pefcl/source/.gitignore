@@ -1,0 +1,5 @@
+.idea
+node_modules
+sv_pefcl.log
+temp
+yarn-error.log

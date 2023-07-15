@@ -1,0 +1,90 @@
+{
+    "PhoneAsItem": {
+        "enabled": true,
+        "exportResource": "qbx-npwd",
+        "exportFunction": "HasPhone"
+    },
+    "customPhoneNumber": {
+        "enabled": false,
+        "exportResource": "number-generator-resource",
+        "exportFunction": "generateNumber"
+    },
+    "general": {
+      "useResourceIntegration": true,
+      "toggleKey": "m",
+      "toggleCommand": "phone",
+      "defaultLanguage": "en",
+      "showId": false
+    },
+    "database": {
+        "useIdentifierPrefix": false,
+        "playerTable": "characters",
+        "identifierColumn": "citizenid",
+        "identifierType": "license",
+        "profileQueries": true,
+        "phoneNumberColumn": "phone_number"
+    },
+    "images": {
+        "useWebhook": true
+    },
+    "imageSafety": {
+        "filterUnsafeImageUrls": true,
+        "embedUnsafeImages": false,
+        "embedUrl": "https://i.example.com/embed",
+        "safeImageUrls": [
+            "i.imgur.com",
+            "i.file.glass",
+            "dropbox.com",
+            "c.tenor.com",
+            "discord.com",
+            "cdn.discordapp.com",
+            "media.discordapp.com",
+            "upload.wikipedia.org",
+            "i.projecterror.dev"
+        ]
+    },
+    "contacts": {
+        "frameworkPay": false,
+        "payResource": "my-core-resource",
+        "payFunction": "myCheckerFunction"
+      },
+    "profanityFilter": {
+        "enabled": false,
+        "badWords": ["esx"]
+    },
+    "twitter": {
+        "showNotifications": true,
+        "generateProfileNameFromUsers": true,
+        "allowEditableProfileName": false,
+        "allowDeleteTweets": true,
+        "allowReportTweets": true,
+        "allowRetweet": true,
+        "characterLimit": 160,
+        "newLineLimit": 10,
+        "enableAvatars": true,
+        "enableEmojis": true,
+        "enableImages": true,
+        "maxImages": 3
+    },
+    "match": {
+        "generateProfileNameFromUsers": true,
+        "allowEditableProfileName": true
+    },
+    "marketplace": {
+        "persistListings": false
+    },
+    "debug": {
+        "level": "error",
+        "enabled": false,
+        "sentryEnabled": false
+    },
+    "defaultContacts": [],
+    "disabledApps": [],
+    "apps": ["pefcl", "npwd_ag_garage", "npwd_qb_mail", "npwd_qb_racing", "npwd_ag_darkweb"],
+    "voiceMessage": {
+        "enabled": false,
+        "authorizationHeader": "PE-Secret",
+        "url": "",
+        "returnedDataIndexes": ["url"]
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "types": ["@citizenfx/client", "@types/node"],
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "target": "es6",
+    "allowJs": true,
+    "lib": ["es2017"]
+  },
+  "include": ["../types", "."]
+}

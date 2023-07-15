@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<CMapTypes>
+  <extensions/>
+  <archetypes>
+    <Item type="CBaseArchetypeDef">
+      <lodDist value="40.00000000"/>
+      <flags value="537001984"/>
+      <specialAttribute value="0"/>
+      <bbMin x="-0.0384932" y="-0.00163509" z="-0.0806759" />
+      <bbMax x="0.0390398" y="0.00473256" z="0.0806374" />
+      <bsCentre x="0.000273287" y="0.00154874" z="-1.92598e-005" />
+      <bsRadius value="0.089546" />
+      <hdTextureDist value="5.00000000"/>
+      <name>dolu_npwd_phone</name>
+      <textureDictionary>dolu_npwd_phone</textureDictionary>
+      <clipDictionary/>
+      <drawableDictionary/>
+      <physicsDictionary>dolu_npwd_phone</physicsDictionary>
+      <assetType>ASSET_TYPE_DRAWABLE</assetType>
+      <assetName>dolu_npwd_phone</assetName>
+      <extensions/>
+    </Item>  </archetypes>
+  <name>dolu_npwd</name>
+  <dependencies/>
+  <compositeEntityTypes/>
+</CMapTypes>

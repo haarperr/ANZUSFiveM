@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    "types": ["@citizenfx/server", "@types/node"]
+  },
+  "include": ["../types", "."]
+}

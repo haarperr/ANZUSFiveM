@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_npwd_nui=self.webpackChunk_npwd_nui||[]).push([[8691],{18691:function(n,u,e){e.r(u);var a=e(61250),t=e(91537);u.default=function(){return(0,a.jsx)(t.Language,{fontSize:"large"})}}}]);
