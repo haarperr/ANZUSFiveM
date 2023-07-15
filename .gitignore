@@ -1,0 +1,47 @@
+## Folders
+
+# Not needed
+source/db/
+db/
+
+# Resource Cache files
+source/cache/
+
+# Server and Web Panel data folders
+txData/
+fxserver/
+Fxserver/
+artifact/
+source/.replxx_history
+source/start.cmd
+start.cmd
+
+# VSCode
+.vscode/
+
+## Files
+
+# Files which don't need to be pushed
+*.log
+source/polyzone_created_zones.txt
+server.cfg
+resources.cfg
+imgui.ini
+
+# Executables
+*.bat
+**/node_modules
+**/pnpm-lock.yaml
+**/beehive.json
+**/*.log
+**/preferences.json
+**/stressData.json
+**/yarn.lock
+**/.replxx_history
+**/.yarn.installed
+**/prop_dump.lua
+
+**/npwd/uploads
+
+# happy's bullshit
+**/dolu_tool
