@@ -1,0 +1,85 @@
+Version 165 32
+{
+	Shaders
+	{
+		default.sps
+		{
+			DiffuseSampler v_62_stadium_det6\BM_metal_black.otx
+			HardAlphaBlend 1.0000000
+			UseTessellation 0.0000000
+		}
+		default.sps
+		{
+			DiffuseSampler v_62_stadium_det6\XJ_GRAY.otx
+			HardAlphaBlend 1.0000000
+			UseTessellation 0.0000000
+		}
+		emissive.sps
+		{
+			DiffuseSampler v_62_stadium_det6\XJ_V_BARB_CEILIGHT01.otx
+			EmissiveMultiplier 3.0000000
+			HardAlphaBlend 1.0000000
+			UseTessellation 0.0000000
+		}
+		default_spec.sps
+		{
+			DiffuseSampler v_62_stadium_det6\XJ_V_Office_ELEVATOR.otx
+			SpecularFalloffMult 175.0000000
+			SpecularFresnel 0.9500000
+			SpecularIntensityMult 0.3250000
+			UseTessellation 0.0000000
+		}
+		default_spec.sps
+		{
+			DiffuseSampler v_62_stadium_det6\XJ_V_REDMETAL.otx
+			SpecularFalloffMult 125.0000000
+			SpecularFresnel 0.6500000
+			SpecularIntensityMult 0.2500000
+			UseTessellation 0.0000000
+		}
+		emissive.sps
+		{
+			DiffuseSampler v_62_stadium_det6\XJ_V_BARB_CEILIGHT01.otx
+			EmissiveMultiplier 2.0000000
+			HardAlphaBlend 1.0000000
+			UseTessellation 0.0000000
+		}
+	}
+	Skeleton null
+	LodGroup
+	{
+		High 9998.0
+		{
+			v_62_stadium_det6\v_62_studio_light01_high.mesh 0
+			v_62_stadium_det6\v_62_studio_lights_high.mesh 0
+			v_62_stadium_det6\Object031.mesh 0
+			v_62_stadium_det6\Object032.mesh 0
+			v_62_stadium_det6\Object033.mesh 0
+			v_62_stadium_det6\Object034.mesh 0
+			v_62_stadium_det6\v_62_studio_light01_high001.mesh 0
+			v_62_stadium_det6\v_62_studio_light02_high.mesh 0
+			v_62_stadium_det6\v_62_studio_light02_high001.mesh 0
+			v_62_stadium_det6\v_62_studio_light02_high002.mesh 0
+			v_62_stadium_det6\v_62_studio_light02_high003.mesh 0
+			v_62_stadium_det6\Object077.mesh 0
+			v_62_stadium_det6\Object078.mesh 0
+			v_62_stadium_det6\Object076.mesh 0
+			v_62_stadium_det6\Object079.mesh 0
+			v_62_stadium_det6\Object080.mesh 0
+			v_62_stadium_det6\Object081.mesh 0
+			v_62_stadium_det6\Object085.mesh 0
+			v_62_stadium_det6\Object086.mesh 0
+			v_62_stadium_det6\Object087.mesh 0
+		}
+		Med 9998.0
+		Low 9998.0
+		Vlow 9998.0
+		AABBMin -31.4834900 29.9522476 2.6288829
+		AABBMax 20.1471863 77.6711884 7.5988007
+		Radius 35.2403
+		Center -5.6681519 53.8117180 5.1138420
+	}
+	Light v_62_stadium_det6\v_62_stadium_det6.light
+	Bound null
+	Joints null
+}

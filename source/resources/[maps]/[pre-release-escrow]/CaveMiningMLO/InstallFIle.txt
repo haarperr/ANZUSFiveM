@@ -1,0 +1,9 @@
+Install: Drag n’ drop but encrypted through CFX and Tebex. 
+You should then recieve access to the MAP in your CFX Keymaster Dashboard. 
+If not -> simply create a ticket on the discord with your Tebex order ID. 
+
+Note that you need server version 4752 or above to run resources using this feature.
+
+Read more here: https://forum.cfx.re/t/introducing-asset-escrow-for-your-resources/4777151
+
+REMEMBER TO PUT THIS RESOURCE IN ITS OWN FOLDER & "start CaveMiningMLO" in ur server config.

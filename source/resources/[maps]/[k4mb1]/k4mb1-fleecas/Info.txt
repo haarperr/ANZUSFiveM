@@ -1,0 +1,18 @@
+Install: Drag n’ drop but encrypted through CFX and Tebex. 
+You should then recieve access to the MAP in your CFX Keymaster Dashboard. 
+If not -> simply create a ticket on the discord with your Tebex order ID. 
+
+Note that you need server version 4752 or above to run resources using this feature.
+
+Read more here: https://forum.cfx.re/t/introducing-asset-escrow-for-your-resources/4777151
+
+GAME BUILD MUST BE: 2372
+
+REMEMBER TO PUT THIS RESOURCE IN ITS OWN FOLDER & "start k4mb1-fleecas" in your server config.
+
+Fleeca 1 Legion Square: 145 -1039 28
+Fleeca 2 Morningwood: -1216 -333 36
+Fleeca 3 Meteor Street: 309 -277 53
+Fleeca 4 Hawick Avenue: -355 -48 48
+Fleeca 5 Route 68: 1179 2706 37
+
