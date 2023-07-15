@@ -1,0 +1,19 @@
+{
+    "blip_label": "Crop Dusting HQ",
+    "return_vehicle": "Return the vehicle you have",
+    "pay_vehicle_fee": "You lost the vehicle pay the fee for it",
+    "deposit_success": "You paid the deposit. A Crop Duster is waiting for you",
+    "no_sufficient_money": "You require $%d for a insurance deposit of the Cropduster",
+    "no_sufficient_fertilizer": "You don\"t have sufficient materials for this job, you require %d fertilizer",
+    "delivery_blip_label": "Fertilize Here",
+    "drop_fertilizer": "[E] Drop the Fertilizer here",
+    "job_complete": "You completed the run, return the vehicle and collect your Pay",
+    "active_job": "You already have an active job",
+    "no_plane": "Come back with your plane",
+    "damage_veh": "The vehicle is either destroyed or not close enough to where it spawned",
+    "start_again": "You can start the job again",
+    "pay": "You recieved an total of $%{reward} for completing %{jobs} jobs",
+    "park_veh": "Park the vehicle where you found it",
+    "tip": "Drive to a Hardware Store to buy crop fertilizer. You need %d crop fertilizer per trip. Afterwards drive to the Crop Dusting HQ in Grapeseed to start your job. There is a $%d deposit for the Crop Dusting Plane",
+    "tip_2": "Fly to the marked location at low altitude and fertilize the field by pressing 'E' at the right moment. Land the plane after %d fertilizations to get your reward."
+}

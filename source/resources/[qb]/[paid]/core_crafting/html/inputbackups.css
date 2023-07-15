@@ -1,0 +1,124 @@
+
+
+
+Currernt Default
+
+#craftInput {
+	z-index: 25;
+	width: 45px;
+	height: 33px;
+	position: absolute;
+	bottom: 15px;
+	right: 128px;
+	background-color: #0099ff;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 5px;
+	border-radius: 10px;
+	line-height: 23px;
+	font-size: 19px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-align: left;
+}
+#u408-4 {
+	z-index: 25;
+	width: 129px;
+	height: 33px;
+	position: absolute;
+	bottom: 10px;
+	right: 134px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 5px;
+	line-height: 23px;
+	font-size: 19px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+
+
+
+Center text - 
+
+#craftInput {
+	z-index: 25;
+	width: 35px;
+	height: 33px;
+	position: absolute;
+	bottom: 15px;
+	right: 128px;
+	background-color: #0099ff;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 10px;
+	border-radius: 10px;
+	line-height: 23px;
+	font-size: 19px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-align: center;
+}
+#u408-4 {
+	z-index: 25;
+	width: 129px;
+	height: 33px;
+	position: absolute;
+	bottom: 10px;
+	right: 126px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 5px;
+	line-height: 23px;
+	font-size: 19px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+Input color background
+
+#craftInput {
+	z-index: 25;
+	width: 45px;
+	height: 33px;
+	position: absolute;
+	bottom: 15px;
+	right: 126px;
+	background-color: #0059955c;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	padding-right: 10px;
+	border-radius: 10px;
+	line-height: 23px;
+	font-size: 19px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-align: center;
+}
+#u408-4 {
+	z-index: 25;
+	width: 130px;
+	height: 30px;
+	position: absolute;
+	bottom: 15px;
+	background-color: #0099ff;
+	border-radius: 10px;
+	right: 126px;
+	padding-top: 2px;
+	padding-left: 5px;
+	padding-right: 10px;
+	line-height: 23px;
+	font-size: 19px;
+	color: #FFFFFF;
+	font-weight: bold;
+}

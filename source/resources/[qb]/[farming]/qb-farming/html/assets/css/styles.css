@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+.selector {
+    background: #000000;
+    /* box-shadow: 12px 12px 2px 1px rgba(136, 255, 0, 0.377); */
+    /* box-shadow: 10px 5px 5px rgba(136, 255, 0, 0.377); */
+    box-shadow: 0px 10px 20px -0px rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.show {
+    display: block !important;
+    opacity: 1 !important;
+    transform: translateY(0vh) !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+.buttons-option {
+    transition: background-color 0.15s ease-in-out;
+}
+
+.buttons-option:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#progressbar {
+    background-color: black;
+
+    border-radius: 13px;
+    border: 0.5px;
+    border-color: white;
+    border-style: solid;
+    padding: 3px;
+}
+
+#progressbar > div {
+    height: 7px;
+    border-radius: 10px;
+}

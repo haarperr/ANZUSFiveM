@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="reset.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>QB-Multicharacter</title>
+
+    <script src="vue.js"></script>
+    <script src="swal2.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <v-app data-app>
+      <div id="app">
+        <div class="container">
+          <div class="main-screen">
+            <div
+              class="characters-list"
+              :class="{'slide-top-left-fade-leave-active': show.characters == false, 'slide-top-left-fade-leave-to': show.characters == false}"
+            >
+              <div class="character-list-header"><p>{{translations.characters_header}}</p></div>
+              <div class="characters">
+                <template v-for="index in characterAmount">
+                  <div
+                    v-if="characters[index] == undefined"
+                    class="character"
+                    v-ripple
+                    :class="{'char-selected': selectedCharacter == index}"
+                    data-cid=""
+                    @click="click_character(index, 'empty')"
+                  >
+                    <span class="slot-name">{{translations.emptyslot}} </span>
+                    <span class="cid"></span>
+                  </div>
+                  <div
+                    v-if="characters[index] !== undefined"
+                    class="character"
+                    v-ripple
+                    :class="{'char-selected': selectedCharacter == index}"
+                    :data-citizenid="characters[index].citizenid"
+                    @click="click_character(index, 'existing')"
+                  >
+                    <span class="slot-name">
+                      {{characters[index].charinfo.firstname}} {{characters[index].charinfo.lastname}}
+                    </span>
+                    <span class="cid">{{characters[index].citizenid}}</span>
+                  </div>
+                </template>
+              </div>
+              <div class="character-btns" v-if="selectedCharacter !== -1">
+                <v-btn large class="character-btn" id="play" v-ripple @click="play_character">
+                  {{characters[selectedCharacter] !== undefined ? translations.play_button :
+                  translations.create_button}}
+                </v-btn>
+                <v-btn
+                  large
+                  class="character-btn"
+                  id="delete"
+                  v-if="characters[selectedCharacter] !== undefined && allowDelete == true"
+                  v-ripple
+                  @click="delete_character"
+                >
+                  {{translations.delete_button}}
+                </v-btn>
+              </div>
+            </div>
+
+            <div
+              class="character-info"
+              :class="{'slide-top-right-fade-leave-active': show.characters == false, 'slide-top-right-fade-leave-to': show.characters == false}"
+            >
+              <span class="char-info-header">{{translations.charinfo_header}}</span>
+              <span class="no-char" v-if="characters[selectedCharacter] == undefined"
+                >{{translations.charinfo_description}}</span
+              >
+              <table v-if="characters[selectedCharacter] !== undefined">
+                <tr>
+                  <td>{{translations.citizenid}}:</td>
+                  <td>{{characters[selectedCharacter].citizenid}}</td>
+                </tr>
+                <tr>
+                  <td>{{translations.name}}:</td>
+                  <td>
+                    {{characters[selectedCharacter].charinfo.firstname}}
+                    {{characters[selectedCharacter].charinfo.lastname}}
+                  </td>
+                </tr>
+                <tr>
+                  <td>{{translations.birthdate}}:</td>
+                  <td>{{characters[selectedCharacter].charinfo.birthdate}}</td>
+                </tr>
+                <tr>
+                  <td>{{translations.gender}}:</td>
+                  <td>
+                    {{characters[selectedCharacter].charinfo.gender == 0 ? translations.male : translations.female}}
+                  </td>
+                </tr>
+                <tr>
+                  <td>{{translations.nationality}}:</td>
+                  <td>{{characters[selectedCharacter].charinfo.nationality}}</td>
+                </tr>
+                <tr>
+                  <td>{{translations.job}}:</td>
+                  <td>{{characters[selectedCharacter].job.label}}</td>
+                </tr>
+                <tr>
+                  <td>{{translations.jobgrade}}:</td>
+                  <td>{{characters[selectedCharacter].job.grade.name}}</td>
+                </tr>
+                <tr>
+                  <td>{{translations.cash}}:</td>
+                  <td>&#36; {{dollar.format(characters[selectedCharacter].money.cash)}}</td>
+                </tr>
+                <tr>
+                  <td>{{translations.bank}}:</td>
+                  <td>&#36; {{dollar.format(characters[selectedCharacter].money.bank)}}</td>
+                </tr>
+              </table>
+            </div>
+
+            <div
+              class="character-register"
+              :class="{'slide-top-fade-leave-active': show.register == false, 'slide-top-fade-leave-to': show.register == false}"
+            >
+              <div class="characters-register-block-header">
+                <p>{{translations.chardel_header}}</p>
+                <span
+                  class="material-symbols-outlined"
+                  id="close-reg"
+                  @click="() => {show.register = false; show.characters = true}"
+                  >close</span
+                >
+              </div>
+              <div class="char-register-inputs">
+                <v-text-field
+                  :placeholder="translations.firstname"
+                  solo
+                  hide-details="auto"
+                  background-color="#141517f2"
+                  v-model="registerData.firstname"
+                  :disabled="!show.register"
+                ></v-text-field>
+                <v-text-field
+                  :placeholder="translations.lastname"
+                  solo
+                  hide-details="auto"
+                  background-color="#141517f2"
+                  v-model="registerData.lastname"
+                  :disabled="!show.register"
+                ></v-text-field>
+                <v-text-field
+                  :placeholder="translations.nationality"
+                  solo
+                  hide-details="auto"
+                  background-color="#141517f2"
+                  v-model="registerData.nationality"
+                  :disabled="!show.register"
+                ></v-text-field>
+                <v-select
+                  solo
+                  :placeholder="translations.gender"
+                  :items="[translations.male, translations.female]"
+                  hide-details="auto"
+                  background-color="#141517f2"
+                  v-ripple
+                  v-model="registerData.gender"
+                  :disabled="!show.register"
+                ></v-select>
+                <v-dialog
+                  ref="dialog"
+                  v-model="dataPickerMenu"
+                  :return-value.sync="registerData.date"
+                  persistent
+                  width="290px"
+                  :disabled="!show.register"
+                >
+                  <template v-slot:activator="{ on, attrs }">
+                    <v-text-field
+                      v-model="registerData.date"
+                      label="translations.birthdate"
+                      readonly
+                      v-bind="attrs"
+                      v-on="on"
+                      solo
+                      background-color="#141517f2"
+                      :disabled="!show.register"
+                    ></v-text-field>
+                  </template>
+                  <v-date-picker v-model="registerData.date" min="1900-01-01" max="2100-12-31">
+                    <v-spacer></v-spacer>
+                    <v-btn text color="primary" @click="dataPickerMenu = false" :disabled="!show.register">
+                      {{translations.cancel}}
+                    </v-btn>
+                    <v-btn
+                      text
+                      color="primary"
+                      @click="$refs.dialog.save(registerData.date)"
+                      :disabled="!show.register"
+                    >
+                      {{translations.confirm}}
+                    </v-btn>
+                  </v-date-picker>
+                </v-dialog>
+              </div>
+              <v-btn
+                :disabled="!show.register"
+                class="character-reg-btn"
+                color="#27AE60"
+                v-ripple
+                @click="create_character"
+                large
+                >{{translations.create_button}}</v-btn
+              >
+            </div>
+
+            <div
+              class="character-delete"
+              :class="{'slide-top-fade-leave-active': show.delete == false, 'slide-top-fade-leave-to': show.delete == false}"
+            >
+              <p class="characters-delete-block-header">{{translations.deletechar_header}}</p>
+
+              <p>{{translations.deletechar_description}}</p>
+
+              <div class="character-delete-btns">
+                <v-btn
+                  :disabled="!show.delete"
+                  color="#2f8643"
+                  v-ripple
+                  class="character-delete-btn"
+                  @click="delete_character"
+                  >{{translations.confirm}}</v-btn
+                >
+                <v-btn
+                  :disabled="!show.delete"
+                  color="#90293e"
+                  v-ripple
+                  class="character-delete-btn"
+                  @click="() => {show.characters = true; show.delete = false}"
+                  >{{translations.cancel}}</v-btn
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </v-app>
+  </body>
+  <script type="text/javascript" src="profanity.js"></script>
+  <script>
+    let re = '(' + profList.join('|') + ')\\b';
+    const regTest = new RegExp(re, 'i');
+
+    const viewmodel = new Vue({
+      el: '#app',
+      vuetify: new Vuetify(),
+      data: {
+        characters: [],
+        chardata: {},
+        show: {
+          characters: false,
+          register: false,
+          delete: false,
+        },
+        registerData: {
+          date: new Date(Date.now() - new Date().getTimezoneOffset() * 60000).toISOString().substr(0, 10),
+          firstname: undefined,
+          lastname: undefined,
+          nationality: undefined,
+          gender: undefined,
+        },
+        allowDelete: false,
+        dataPickerMenu: false,
+        characterAmount: 0,
+        selectedCharacter: -1,
+        dollar: Intl.NumberFormat('en-US'),
+        translations: {},
+      },
+      methods: {
+        click_character: async function (idx, type) {
+          viewmodel.selectedCharacter = idx;
+
+          await fetch('https://qb-multicharacter/previewPed', {
+            method: 'POST',
+            body: JSON.stringify({ Data: viewmodel.characters[idx] ? viewmodel.characters[idx] : null }),
+          });
+        },
+
+        save: function (date) {
+          this.$refs.menu.save(date);
+        },
+
+        delete_character: async function () {
+          if (viewmodel.show.delete == true) {
+            viewmodel.show.delete = false;
+            await fetch('https://qb-multicharacter/removeCharacter', {
+              method: 'POST',
+              body: JSON.stringify({
+                citizenid: viewmodel.characters[viewmodel.selectedCharacter].citizenid,
+              }),
+            });
+          } else {
+            if (viewmodel.show.characters == true && viewmodel.show.register == false) {
+              viewmodel.show.characters = false;
+              viewmodel.show.delete = true;
+            }
+          }
+        },
+
+        play_character: async function () {
+          if (viewmodel.selectedCharacter && viewmodel.selectedCharacter !== -1) {
+            var data = viewmodel.characters[viewmodel.selectedCharacter];
+
+            if (data !== undefined) {
+              await fetch('https://qb-multicharacter/selectCharacter', {
+                method: 'POST',
+                body: JSON.stringify({ cData: data }),
+              });
+              viewmodel.show.characters = false;
+            } else {
+              viewmodel.registerData.firstname = undefined;
+              viewmodel.registerData.lastname = undefined;
+              viewmodel.registerData.nationality = undefined;
+              viewmodel.registerData.gender = undefined;
+              viewmodel.registerData.date = new Date(Date.now() - new Date().getTimezoneOffset() * 60000)
+                .toISOString()
+                .substr(0, 10);
+
+              viewmodel.show.characters = false;
+              viewmodel.show.register = true;
+            }
+          }
+        },
+
+        create_character: async function () {
+          const registerData = viewmodel.registerData;
+          var profanityTest =
+            !regTest.test(registerData.firstname) &&
+            !regTest.test(registerData.nationality) &&
+            !regTest.test(registerData.lastname);
+
+          if (
+            profanityTest &&
+            registerData.firstname !== undefined &&
+            registerData.firstname !== '' &&
+            registerData.lastname !== undefined &&
+            registerData.lastname !== '' &&
+            registerData.gender !== undefined &&
+            registerData.nationality !== undefined &&
+            registerData.nationality !== '' &&
+            registerData.date !== undefined
+          ) {
+            viewmodel.show.register = false;
+
+            await fetch('https://qb-multicharacter/createNewCharacter', {
+              method: 'POST',
+              body: JSON.stringify({
+                fullname: `${registerData.firstname} ${registerData.lastname}`,
+                nationality: registerData.nationality,
+                birthdate: registerData.date,
+                gender: registerData.gender,
+                cid: viewmodel.selectedCharacter,
+              }),
+            });
+          } else {
+            if (!profanityTest) {
+              Swal.fire({
+                icon: 'error',
+                title: viewmodel.translations.ran_into_issue,
+                text: viewmodel.translations.profanity,
+                timer: 5000,
+                timerProgressBar: true,
+                showConfirmButton: false,
+              });
+            } else {
+              Swal.fire({
+                icon: 'error',
+                title: viewmodel.translations.ran_into_issue,
+                text: viewmodel.translations.forgotten_field,
+                timer: 5000,
+                timerProgressBar: true,
+                showConfirmButton: false,
+              });
+            }
+          }
+        },
+      },
+      mounted() {
+        window.addEventListener('message', async function (event) {
+          var data = event.data;
+          switch (data.action) {
+            case 'ui':
+              viewmodel.show.register = false;
+              viewmodel.show.delete = false;
+              viewmodel.show.characters = false;
+              viewmodel.selectedCharacter = -1;
+              if (event.data.toggle) {
+                viewmodel.translations = event.data.translations;
+                viewmodel.characterAmount = data.nChar;
+                viewmodel.allowDelete = event.data.enableDeleteButton;
+                EnableDeleteButton = data.enableDeleteButton;
+                await fetch('https://qb-multicharacter/setupCharacters', {
+                  method: 'POST',
+                });
+                viewmodel.show.characters = true;
+                await fetch('https://qb-multicharacter/removeBlur', {
+                  method: 'POST',
+                });
+              } else {
+                viewmodel.translations = {};
+                viewmodel.characterAmount = 0;
+                viewmodel.allowDelete = false;
+              }
+              break;
+            case 'setupCharacters':
+              var newChars = [];
+              for (var i = 0; i < event.data.characters.length; i++) {
+                newChars[event.data.characters[i].charinfo.cid] = event.data.characters[i];
+              }
+              viewmodel.characters = newChars;
+              break;
+            case 'setupCharInfo':
+              viewmodel.chardata = event.data.chardata;
+              break;
+          }
+        });
+      },
+    });
+  </script>
+</html>

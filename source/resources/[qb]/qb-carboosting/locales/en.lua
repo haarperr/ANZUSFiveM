@@ -1,0 +1,56 @@
+Translations = {
+    error = {
+        ["too_many_contracts"] = 'You have too many contracts',
+        ['not_enough_crypto'] = 'Not enough crypto..',
+        ['not_enough_cops'] = 'Not enough cops..',
+        ['invalid_arguments'] = 'Invalid argument(s)..',
+        ['vehicle_far'] = 'Vehicle is too far away..',
+        ['canceled'] = 'Cancelled..',
+        ['failed'] = 'You failed..',
+        ['only_passenger'] = 'You can only do this from the passenger seat',
+        ['too_slow'] = 'This vehicle is moving too slow',
+        ['wrong_vehicle'] = 'Cannot do that in this vehicle',
+        ['tier_too_high'] = 'This player cannot receive a boosting contract with this tier',
+        ['not_as_cop'] = 'Nice Try',
+        ['player_not_online'] = 'The owner of the vehicle is not in the area',
+        ['only_driver'] = 'Only the driver can perform this action',
+        ['cannot_crush'] = 'You cannot crush this vehicle',
+        ['stealing_your_vehicle'] = 'Someone is stealing your vehicle!'
+    },
+    success = {
+        ['created_contract'] = 'Successfully created a boost',
+        ['for_police'] = 'You do not have sufficient permission(s)',
+        ['scratched_vin'] = 'You successfully scratched off VIN',
+        ['completed_contract'] = 'You successfully completed the contract'
+    },
+    info = {
+        ['new_contract_title'] = 'New Contract ', -- Leave a space because tier is concatenated
+        ['new_contract_text'] = 'You have received a new contract!',
+        ["door_ringing"] = "Someone is ringing the door!",
+        ['joined_queue'] = 'You have joined the queue',
+        ['left_queue'] = 'You have left the queue',
+        ['create_contract'] = 'Create a boosting contract',
+        ['vin_scratched'] = 'The VIN has been scratched off',
+        ['vin_notscratched'] = 'Everything checks out',
+        ['checking_vin'] = 'Checking VIN',
+        ['scratching_vin'] = 'Scratching off VIN',
+        ['can_scratch_vin'] = 'You can now physically scratch the VIN off!',
+        ['go_wipe_paperwork'] = 'Log onto a computer and wipe the online paperwork!',
+        ['connect_network'] = 'Connecting to DMV database',
+        ['wiping_paperwork'] = 'Wiping details from DMV database',
+        ['can_wipe'] = 'You can now wipe the records from the DMV',
+        ['go_vehicle'] = 'The area has been marked on your radar',
+        ['find_steal'] = 'Locate and steal the vehicle',
+        ['look_tracking'] = 'Locate and disable the tracking devices',
+        ['canceled_contract'] = 'Cancelled contract',
+        ['go_dropoff'] = 'Make sure no cops are around and bring the vehicle to the drop off location!',
+        ['park_vehicle'] = 'Park the vehicle at the drop off location and leave the area',
+        ['current'] = 'CURRENT',
+        ['update_tracker'] = "Looking for tracking devices ", -- Leave a space again
+        ['completed_contract'] = 'You successfully completed the contract',
+        ['set_boostingrep'] = 'Set a players boosting rep value',
+        ['crush_vehicle'] = '[E] - Crush Vehicle',
+        ['progressbar_crushing'] = 'Crushing Vehicle'
+    },
+    log = {}
+}

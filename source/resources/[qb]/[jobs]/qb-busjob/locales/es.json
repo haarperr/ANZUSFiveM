@@ -1,0 +1,17 @@
+{
+  "already_driving_bus": "Ya estás manejando un autobús",
+  "not_in_bus": "No estás en un autobús",
+  "one_bus_active": "Solo puedes tener un autobús activo a la vez",
+  "drop_off_passengers": "Lleva a tus pasajeros antes de salir del trabajo",
+  "dropped_off": "Una persona se bajó",
+  "bus": "Autobús estándar",
+  "goto_busstop": "Ir a la siguiente parada de autobús",
+  "busstop_text": "[E] Parada de autobús",
+  "bus_plate": "BUS",
+  "bus_depot": "Estación de autobuses",
+  "bus_stop_work": "[E] Salir del trabajo",
+  "bus_job_vehicles": "[E] Vehículos de trabajo",
+  "bus_header": "Autobuses",
+  "bus_job": "Trabajo de autobús",
+  "exploit_attempt": "Intento de abuso"
+}

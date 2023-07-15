@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Code&display=swap');
+
+body {
+    position: relative;
+    font-family: sans-serif;
+    overflow: hidden;
+    top: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+  height: 105vh;
+  display:none;
+}
+
+.radio-container {
+  position: absolute;
+  /* bottom: -56vh; */
+  right: -1vh;
+}
+
+.radio {
+  width: 50.0vh;
+  left: 10vh;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+#submit {
+  position: absolute;
+  width: 3.9vh;
+  height: 1.80vh;
+  bottom: 16.5vh;
+  left: 17.5vh;
+  border-radius: 5px;
+  transition: all 0.1s linear;
+}
+
+#submit:hover::before {
+  content: attr(title); display: block;
+  position:relative;
+  top:-20px;
+  font-size:12px;
+  color:white;
+  background-color:rgb(255 0 0 / 0%);
+  padding:2px;
+}
+
+#disconnect {
+  position: absolute;
+  width: 3.9vh;
+  height: 1.80vh;
+  bottom: 16.5vh;
+  left: 29.0vh;
+  border-radius: 5px;
+  transition: all 0.1s linear;
+}
+
+#disconnect:hover::before {
+  content: attr(title); display: block;
+  position:relative;
+  top:-20px;
+  font-size:12px;
+  color:white;
+  background-color:rgba(0, 0, 0, 0);
+  padding:2px;
+}
+
+#volumeUp {
+  position: absolute;
+  width: 3.9vh;
+  height: 1.80vh;
+  bottom: 19.0vh;
+  left: 28.5vh;
+  border-radius: 5px;
+  transition: all 0.1s linear;
+}
+
+#volumeUp:hover::before {
+  content: attr(title); display: block;
+  position:relative;
+  top:-20px;
+  font-size:12px;
+  color:white;
+  background-color:rgba(0, 0, 0, 0);
+  padding:2px;
+}
+
+#volumeDown {
+  position: absolute;
+  width: 3.9vh;
+  height: 1.80vh;
+  bottom: 19.0vh;
+  left: 17.5vh;
+  border-radius: 5px;
+  transition: all 0.1s linear;
+}
+
+#volumeDown:hover::before {
+  content: attr(title); display: block;
+  position:relative;
+  top:-20px;
+  font-size:12px;
+  color:white;
+  background-color:rgba(0, 0, 0, 0);
+  padding:2px;
+}
+
+#increaseradiochannel {
+  position: absolute;
+  width: 4.0vh;
+  height: 1.9vh;
+  bottom: 6.5vh;
+  left: 28.0vh;
+  border-radius: 5px;
+  transition: all 0.1s linear;
+}
+
+#increaseradiochannel:hover::before {
+  content: attr(title); display: block;
+  position:relative;
+  top:-20px;
+  font-size:12px;
+  color:white;
+  background-color:rgba(0, 0, 0, 0);
+  padding:2px;
+}
+
+#decreaseradiochannel {
+  position: absolute;
+  width: 4.0vh;
+  height: 1.9vh;
+  bottom: 6.5vh;
+  left: 17.5vh;
+  border-radius: 5px;
+  transition: all 0.1s linear;
+}
+
+#decreaseradiochannel:hover::before {
+  content: attr(title); display: block;
+  position:relative;
+  top:-20px;
+  font-size:12px;
+  color:white;
+  background-color:rgba(0, 0, 0, 0);
+  padding:2px;
+}
+
+.onoff button {
+  padding: 40px 55px;
+  opacity: .0;
+}
+
+.channel {
+  position: absolute;
+  bottom: 30vh;
+  left: 17.5vh;
+  background: none;
+}
+
+
+::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.863);
+}
+
+.channel span {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.channel input {
+  text-align: center;
+  border: none;
+  font-size: 36px;
+  background: none;
+  outline: none;
+  font-family: 'Fira Code', monospace;
+  width: 8vw;
+  color: white;
+}
+
+::-webkit-inner-spin-button {
+  display: none;
+}

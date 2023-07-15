@@ -1,0 +1,387 @@
+/* root styling */
+
+html,
+body {
+    font-family: "Roboto", sans-serif !important;
+    background: transparent !important;
+}
+
+
+/* wrapper around all divs */
+
+.root-wrapper {
+    width: 80%;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    position: absolute;
+    overflow: hidden;
+    background-color: #17171f;
+    color: white;
+    display: flex;
+}
+
+
+/* body */
+
+.body-text {
+    margin-left: 30px;
+}
+
+/* buttons */
+
+.buttons-contracts {
+    margin-top: 1em;
+    border: none;
+    margin-left: 1em;
+    padding: 15px 32px;
+    border-radius: 3px;
+    background-color: #21212b;
+    color: white;
+}
+
+.margin-right {
+    margin-right: 1em;
+}
+
+.buttons-contracts:disabled {
+    opacity: 0.6;
+}
+
+.button-flex {
+    flex: 1;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.contract-buttons-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* .close-button {
+    background-color: red;
+    height: 17px;
+    width: 17px;
+    margin-left: 85.5%;
+    margin-top: 15px;
+    border: none;
+    border-radius: 40%;
+} */
+
+.close-button {
+    background-color: red;
+    height: 17px;
+    width: 17px;
+    border: none;
+    border-radius: 40%;
+}
+
+
+/* header */
+
+.header-text {
+    margin-left: 1em;
+}
+
+.header-button {
+    margin-right: 1em;
+}
+
+.header-wrapper {
+    display: flex;
+    width: 80%;
+    height: 5%;
+    left: 50%;
+    top: 13%;
+    transform: translateY(-50%) translateX(-50%);
+    position: absolute;
+    overflow: hidden;
+    background-color: #21212b;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p {
+    margin: 0 !important;
+}
+
+
+/* progress-bar */
+
+#progressbarstyle {
+    margin-top: 30px;
+    width: 80%;
+    height: 10px;
+    background-color: #21212b;
+}
+
+.progressbar-flex {
+    display: -webkit-flex;
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.progress-text {
+    margin: 25px;
+    font-size: 13px;
+}
+
+
+/* contracts */
+
+.contract-buttons {
+    border: none;
+    padding: 10px 30px;
+    border-radius: 3px;
+    background-color: #17171f;
+    color: white;
+    margin: 10px 12px 3px 12px;
+}
+
+.contract-buttons:disabled {
+    opacity: 0.6;
+}
+
+.contract-4-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.margin-cards {
+    margin: 1em;
+}
+
+.contract-cards {
+    height: 90%;
+    border-radius: 5px;
+    background-color: #21212b;
+}
+
+.contract-rank {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    margin-top: 4px;
+}
+
+.player-contract-rank {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    margin-top: 10px;
+}
+
+.contract-rank-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 3px solid #00e9b6;
+    background-color: #17171f;
+}
+
+@media (max-height: 800px) {
+    .contract-details-text {
+        font-size: 12px;
+    }
+    .contract-buttons {
+        border: none;
+        padding: 0 !important;
+        border-radius: 3px;
+        background-color: #17171f;
+        color: white;
+        margin: 6px;
+    }
+}
+
+.contract-details-text {
+    text-align: left;
+}
+
+.group-contracts {
+    display: flex;
+    flex-direction: row;
+}
+
+.contract-flex {
+    width: 250px;
+    height: 480px;
+    margin: 1em;
+}
+
+.accepted-contract-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -180px;
+    background-color: #21212B;
+    width: 350px;
+    height: 200px;
+    color: white;
+    border: 1px white solid;
+}
+
+.accepted-contract-title-flex {
+    display: flex;
+    margin-top: 5px;
+}
+
+.accepted-contract-closeButton {
+    margin-top: 5px;
+    margin-left: 320px;
+    background-color: red;
+    border: transparent;
+    border-radius: 40%;
+    height: 17px;
+    width: 17px;
+    border: none;
+}
+
+.accepted-contract-text {
+    margin: auto;
+}
+
+.accepted-contract-title {
+    margin-left: 115px;
+    margin-top: -20px;
+}
+
+.accepted-contract-optionButton {
+    border: none;
+    height: 40px;
+    width: 130px;
+    border-radius: 10px;
+    background-color: #17171f;
+    color: white;
+    font-size: 12px;
+    margin-top: 35px;
+}
+
+.accepted-contract-optionButton-flex {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-right: 35px;
+    margin-left: 35px;
+    margin-bottom: 15px;
+}
+
+.transfer-contract-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #21212B;
+    width: 250px;
+    height: 150px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -150px;
+    border: 1px white solid;
+}
+
+.transfer-contract-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.transfer-contract-inputfield {
+    -webkit-appearance: none;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 30px;
+    border-radius: 7px;
+    background-color: #17171f;
+    border: none;
+    color: white;
+}
+
+.transfer-contract-optionButton-flex {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.transfer-contract-optionButton-continue {
+    border: none;
+    height: 40px;
+    width: 100px;
+    color: white;
+    font-size: 12px;
+    border-radius: 5px;
+    background-color: #4DBB22;
+}
+
+.transfer-contract-optionButton-cancel {
+    border: none;
+    height: 40px;
+    width: 100px;
+    color: white;
+    font-size: 12px;
+    border-radius: 5px;
+    background-color: #FF5F53;
+}
+
+.popup {
+    display: flex;
+    flex-direction: column;
+    background-color: #21212B;
+    width: 250px;
+    height: 150px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -150px;
+    border: 1px white solid;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-button {
+    display: flex;
+    background-color: red;
+    height: 17px;
+    width: 17px;
+    margin-left: 56%;
+    margin-top: -35px;
+    margin-right: -55px;
+    border: none;
+    border-radius: 40%;
+}
+
+.popuptext {
+    margin-top: 40px;
+}
+
+.playerbanner {
+    display: flex;
+    background-color: #0C7C4E;
+    color: white;
+    justify-content: center;
+    margin-bottom: -30px;
+    border-radius: 2px;
+}

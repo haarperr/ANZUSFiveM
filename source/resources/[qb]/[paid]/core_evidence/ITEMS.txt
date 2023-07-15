@@ -1,0 +1,3 @@
+ADD ITEMS TO SHARED.LUA
+
+["uvlight"]={["name"]="uvlight",["label"]="UV Flashlight",["weight"]=300,["type"]="item",["image"]="uvlight.png",["unique"]=true,["useable"]=true,["shouldClose"]=true,["combinable"]=nil,["description"]="A flashlight to see fingerprints"},
