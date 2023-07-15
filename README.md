@@ -3,10 +3,6 @@
 
 <h1 align="center"> Anzus Fivem Project </h1>
 
-<!-- [![Server - 1.0](https://img.shields.io/static/v1?label=Server-Files&message=1.0-Alpha&color=blue&logo=github)](https://github.com/DannyPrescott/Anzus-Fivem-Project "Pre-Alpha Server Files")
-
-[![Github - Private](https://img.shields.io/static/v1?label=Github&message=Private&color=blue&logo=github)](https://github.com/DannyPrescott/Anzus-Fivem-Project "This github is set to private") -->
-
  
 Anzus Forums: [Link](https://www.anzus.life/)
 
@@ -18,12 +14,12 @@ Welcome to the Anzus Development Team! This is a guide on how to get started wit
 - Clone the repo to your desired location.
 - After this create a folder named ```source```  in your directory.
 - Make a COPY of ```devresources.cfg.md``` & ```devserver.cfg.md``` without deleting them. 
-- When you have completed the previous step rename the copies you made to ```resources.cfg``` & ```server.cfg```. It should appear like this when done. [Example](https://i.imgur.com/42oCiwl.png)
+- When you have completed the previous step rename the copies you made to ```resources.cfg``` & ```server.cfg```. It should appear like this when done. [Example](https://goresee.com/w/b9c60414-df1b-4b4e-b5c3-5ad1e07a80af)
 - After you have made your copies you need to make a server key on [Keymaster](https://keymaster.fivem.net) and place it at the top of the ```server.cfg``` file next to ```sv_licenseKey "PUT_YOUR_KEY_HERE"```. 
 - It should look something like this.
 ```sv_licenseKey "cfxk_1Aj4XytPxbFeQEGfZ3PRE"```
 - [Download](https://runtime.fivem.net/artifacts/fivem/build_server_windows/master/) the latest artifact from fivem. Please refrain from using the "latest recommended" and "latest optional" buttons at the top of the website as they tend to be out of date. 
-- Make another folder called ```fxserver``` and put the artifact you downloaded from the previous step in the folder you created ```fxserver``` [Example](https://i.imgur.com/aefWtgS.png)
+- Make another folder called ```fxserver``` and put the artifact you downloaded from the previous step in the folder you created ```fxserver``` [Example](https://goresee.com/w/b9c60414-df1b-4b4e-b5c3-5ad1e07a80af)
 - Your folder structure should appear like this after the previous steps have been completed. 
 ```
 Anzus-Fivem-Project
@@ -37,7 +33,7 @@ Anzus-Fivem-Project
 - Make your local backup password this will not push to github as its in the gitignore file.
 - When it asks you to make a server name you can make it whatever you want it will not change the main github.
 - In step 3 of the txadmin setup click ```Existing Server Data``` and direct it to your ```source``` folder with the ```server.cfg``` you created this in step 2
-- Go into your txadmin panel it is generally found in your browser [redirect](http://localhost:40120/) and head to your settings panel then ```FXServer``` tab and make sure under the ```OneSync``` sub section it is set to ```On (with infinity)``` and then under the "Additional Arguments" sub section type ```+set sv_enforceGameBuild 2372``` [Example](https://i.imgur.com/gYg2N47.png)
+- Go into your txadmin panel it is generally found in your browser [redirect](http://localhost:40120/) and head to your settings panel then ```FXServer``` tab and make sure under the ```OneSync``` sub section it is set to ```On (with infinity)``` and then under the "Additional Arguments" sub section type ```+set sv_enforceGameBuild 2372``` [Example](https://goresee.com/w/b9c60414-df1b-4b4e-b5c3-5ad1e07a80af)
 - The last step is to make sure you have system permissions in the bottom of your server.cfg and in the permissions table in the sql database.
 - Congratulations! You may now start your local dev server.
 
