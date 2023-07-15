@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ShopPedApparel>
+<pedName>mp_f_freemode_01</pedName>
+<dlcName>anzus</dlcName>
+<fullDlcName>mp_f_freemode_01_anzus</fullDlcName>
+<eCharacter>SCR_CHAR_MULTIPLAYER_F</eCharacter>
+<creatureMetaData>MP_CreatureMetadata_anzus</creatureMetaData>
+
+<pedOutfits>
+</pedOutfits>
+<pedComponents>
+</pedComponents>
+<pedProps>
+</pedProps>
+
+</ShopPedApparel>
