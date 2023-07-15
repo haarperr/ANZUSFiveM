@@ -1,0 +1,17 @@
+{
+    "hack_computer": "Hack Computer",
+    "grab_painting": "Grab Painting",
+    "smash_case": "Smash Case",
+    "glass_too_strong": "This glass is too strong for this weapon",
+    "failed_case": "You get frustrated",
+    "use_keycard": "Use keycard",
+    "invalid_keycard": "Invalid keycard used, setting timeout",
+    "valid_keycard": "Keycard accepted, door opening",
+    "server_header": "Secure Systems",
+    "vault_code": "cat /tmp/vault -> %s",
+    "code_header": "Secure Systems | Code",
+    "invalid_code": "Invalid code (%d/%d attempts)",
+    "correct_code": "Correct Code",
+    "nice_try": "Nice try",
+    "not_enough_police": "Not enough police online"
+}

@@ -1,0 +1,12 @@
+{
+    "chop_tree": "Chop Tree",
+    "chopping_tree": "Chopping Tree",
+    "need_axe": "You are missing an axe",
+    "cannot_carry": "You cannot carry any more lumber",
+    "process_lumber": "Process Lumber",
+    "lumber_mill": "Lumber Mill",
+    "processing_lumber": "Processing",
+    "sell": "Sell All",
+    "no_to_sell": "You do not have %s to sell",
+    "sold": "You have sold %s for $%d"
+}

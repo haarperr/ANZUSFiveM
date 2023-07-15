@@ -1,0 +1,24 @@
+{
+    "public_parking": "Public Parking",
+    "park_vehicle": "Park Vehicle",
+    "garage": "Garage",
+    "no_vehicles_stored": "You do not have any vehicles stored here",
+    "no_vehicles_stored_job": "There are no vehicles stored here",
+
+    "shared_pool": "🚔 Shared Pool",
+    "personal_pool": "🚔 Personal",
+    "vehicle_shop": "🛒 Vehicle Shop",
+
+    "cannot_be_stored_here_class": "This type of vehicle cannot be stored here",
+    "you_cannot_store": "You cannot store this vehicle",
+
+    "impound_lot": "Impound Lot",
+    "no_impounded_vehicles": "You have no impounded vehicles",
+    "impound_available": "Your vehicle is now available for pickup out back",
+
+    "oops": "An error has occured",
+
+    "not_enough_funds": "You do not have enough funds for this",
+    "no_vehicle_data": "Unable to retrieve vehicle data",
+    "successful_purchase": "Successfully purchased vehicle and placed into the garage"
+}

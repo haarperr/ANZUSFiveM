@@ -1,0 +1,12 @@
+{
+    "notify_title": "Fishing",
+    "fish_got_away": "The fish escaped!",
+    "cant_fish_here": "You cannot fish here",
+    "no_fishing_rod_or_bait": "You need both a fishing rod and bait to start fishing",
+    "not_enough_fish": "You do not have enough fish",
+    "inventory_full": "Your inventory is full",
+    "sold_everything": "You have sold everything for $%d",
+    "sold_single": "You have sold %s x%d for $%d",
+    "checking_location": "Checking location for fish",
+    "line_dropped": "Line has been dropped, wait for a fish to bite!"
+}

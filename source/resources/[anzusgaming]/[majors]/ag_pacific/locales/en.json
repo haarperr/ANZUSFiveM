@@ -1,0 +1,20 @@
+{
+    "thermite_door": "Place thermite",
+    "hack_schedule": "Hack Schedule",
+    "manager_schedule_header": "Bank Manager Schedule",
+    "current_meeting": "Current Meeting:\n%s",
+    "steal_security_card": "Steal Security Card",
+    "use_keycard": "Use keycard",
+    "invalid_keycard": "Invalid keycard used, setting timeout",
+    "valid_keycard": "Keycard accepted, door opening",
+    "hack_laptop": "Hack Panel",
+    "placing_drill": "Placing drill",
+    "too_far": "You must be within range of the drill",
+    "drill_vault": "Drill",
+    "blow_door": "Place Explosive",
+    "success_plant": "You have planted an explosive thermite charge, stand back! 5 second warning",
+    "failed_thermite": "You have failed to plant the explosive thermite charge",
+    "grab": "Grab %s",
+    "nice_try": "Nice try",
+    "not_enough_police": "Not enough police online"
+}

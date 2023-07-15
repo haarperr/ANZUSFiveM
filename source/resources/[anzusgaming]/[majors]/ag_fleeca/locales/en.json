@@ -1,0 +1,26 @@
+{
+    "spotted": "Spotted by security camera",
+    "police_alerted": "The police have been notified",
+
+    "camera_tamper": "Tampering with cameras",
+    "camera_tamper_fail": "Failed to deactivate cameras",
+    "camera_tamper_success": "Deactivated all cameras nearby",
+
+    "steal_security_card": "Steal security card",
+
+    "use_drill": "Use drill",
+    "too_far": "You are too far away from the drill",
+
+    "use_thermite": "Place Thermite",
+
+    "grab_cash": "Grab Cash",
+    "grab_trolly": "Grab Gold",
+
+    "drilling": "Drilling",
+    "failed_lockbox": "Failed to find right position for drill",
+    "success_lockbox": "Successfully drilled into lockbox",
+    "failed_thermite": "Failed",
+    "success_thermite": "Door opened!",
+
+    "not_enough_police": "Not enough police online"
+}
