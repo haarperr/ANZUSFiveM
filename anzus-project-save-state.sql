@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         142.44.222.228
--- Server version:               10.11.2-MariaDB-log - mariadb.org binary distribution
--- Server OS:                    Win64
--- HeidiSQL Version:             12.3.0.6589
+-- Server version:               10.10.2-MariaDB-1:10.10.2+maria~ubu2204 - mariadb.org binary distribution
+-- Server OS:                    debian-linux-gnu
+-- HeidiSQL Version:             12.2.0.6576
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
